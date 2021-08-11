@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            background-color: yellowgreen;
+            color: white;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            background-color: black;
+            width: 100%;
+            height: 80px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        button {
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email {
+            height: 35px;
+            color: #282828;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 8px 0 white;
+
+        }
+
+        .email:hover {
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+
+        .fb {
+            height: 35px;
+            background-color: #3b5998;
+            color: #282828;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 8px 0 white;
+        }
+
+        .fb:hover {
+            cursor: pointer;
+            color: #3b5998;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCyPAcz65XUqJS5oikJ39MHmYxMAB3h8B0",
+            authDomain: "project-1-2d6e9.firebaseapp.com",
+            databaseURL: "https://project-1-2d6e9-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "project-1-2d6e9",
+            storageBucket: "project-1-2d6e9.appspot.com",
+            messagingSenderId: "609054605174",
+            appId: "1:609054605174:web:59fa4e803dd287b8fe8457",
+            measurementId: "G-HXYNXBSQ61"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <nav>
+    </nav>
+
+    <div class="main">
+        <h1>Quiz Application</h1>
+        <br><br><br>
+        <h2>Sign In to Start Your Exam</h2>
+        <br>
+        <button class="email" onclick="window.location.href = './signup.html'"><img src="./email logo.png"
+                width="30px">Sign In With Email</button>
+        <br>
+        <button class="fb" onclick="fblogin()"><img src="./fb-logo.png" width="30px">Sign In With Facebook</button>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
