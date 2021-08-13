@@ -53,7 +53,7 @@ function fblogin() {
             // Handle Errors here.
 
             var errorMessage = error.message;
-            console.log(errorMessage)
+            alert(errorMessage)
         });
 }
 
@@ -70,7 +70,7 @@ function signup() {
         })
         .catch((error) => {
             var errorMessage = error.message;
-            console.log(errorMessage)
+            alert(errorMessage)
         });
 }
 
@@ -89,7 +89,7 @@ function signin() {
         })
         .catch((error) => {
             var errorMessage = error.message;
-            console.log(errorMessage)
+            alert(errorMessage)
         });
 }
 
