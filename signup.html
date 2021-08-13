@@ -14,14 +14,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url("https://wallpapercave.com/wp/wp2566029.jpg");
+            background-image: url("https://images.pexels.com/photos/7925859/pexels-photo-7925859.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+            background-position: center;
             font-size: larger;
         }
 
         .main {
-            color: yellowgreen;
-            background-color: white;
-            border: 2px solid yellowgreen;
+            color: #3b5998;
+            background-color: black;
+            border: 2px solid #3b5998;
             border-radius: 40px;
 
             margin-top: 50px;
@@ -34,11 +35,13 @@
         }
 
         h1 {
-            color: black;
+            color: #3b5998;
+            font-weight: bolder;
+            font-size: 50px;
         }
 
         input {
-            border: 2px solid yellowgreen;
+            border: 2px solid #3b5998;
             border-radius: 10px;
             height: 30px;
             padding: 5px;
@@ -48,8 +51,8 @@
 
         button {
             background-color: white;
-            border: 2px solid yellowgreen;
-            color: yellowgreen;
+            border: 2px solid #3b5998;
+            color: #3b5998;
             padding: 5px;
             border-radius: 10px;
             font-size: large;
@@ -58,9 +61,17 @@
         button:hover {
             cursor: pointer;
             color: white;
-            background-color: yellowgreen;
+            background-color: #3b5998;
 
         }
+        h4,a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color:black;
+        }
+        
     </style>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
@@ -99,6 +110,9 @@
         <br>
         <button onclick="signup()">Sign Up</button>
 
+    </div>
+    <div class="add">
+        <h4>If you've already Sign Up then go to <a href="./signin.html">Sign In</a></h4>
     </div>
     <script src="app.js"></script>
 </body>
